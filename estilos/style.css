@@ -20,7 +20,7 @@ main{
 
 section#cadastro{
     display: flex;
-    width: 80%;
+    width: 55%;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0,0,0, .212);
     border-radius: 10px;
