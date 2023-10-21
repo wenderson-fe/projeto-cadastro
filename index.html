@@ -20,36 +20,36 @@
 
             <div id="formulario">
                 <h1>Cadastre-se</h1>
-                <form action="cadastro.php">
+                <form action="cadastro.php" method="post">
                     <div class="inputs">
                         <div class="mb-3">
                             <label for="exampleInputText1" class="form-label">Primeiro Nome</label>
-                            <input type="text" class="form-control" id="exampleInputText1" aria-describedby="Primeiro-nome"
+                            <input type="text" class="form-control" id="exampleInputText1" name="nome" aria-describedby="Primeiro-nome"
                                 required placeholder="Digite seu primeiro nome">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputText2" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" id="exampleInputText2" aria-describedby="Sobrenome"
+                            <input type="text" class="form-control" id="exampleInputText2" name="sobrenome" aria-describedby="Sobrenome"
                                 required placeholder="Digite seu sobrenome">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="E-mail"
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="E-mail"
                                 required placeholder="Digite seu e-mail">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputTel" class="form-label">Celular</label>
-                            <input type="tel" class="form-control" id="exampleInputTel" required
+                            <input type="tel" class="form-control" id="exampleInputTel" name="telefone" required
                                 placeholder="(xx) xxxx-xxxx">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" required
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="senha" required
                                 placeholder="Digite sua senha">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword2" class="form-label">Confirme sua senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" required
+                            <input type="password" class="form-control" id="exampleInputPassword2" name="conf-senha" required
                                 placeholder="Digite sua senha novamente">
                         </div>
                     </div>
