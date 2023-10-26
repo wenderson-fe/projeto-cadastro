@@ -27,26 +27,31 @@
                             <input type="text" class="form-control required" id="exampleInputText1" name="nome" aria-describedby="Primeiro-nome" oninput="validacaoNome()" required placeholder="Digite seu primeiro nome">
                             <span class="span-required">Nome deve ter no mínino 5 caracteres</span>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputText2" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control required" id="exampleInputText2" name="sobrenome" aria-describedby="Sobrenome" required placeholder="Digite seu sobrenome">
+                            <input type="text" class="form-control required" id="exampleInputText2" name="sobrenome" aria-describedby="Sobrenome" oninput="validacaoSobrenome()" required placeholder="Digite seu sobrenome">
                             <span class="span-required">Sobrenome deve ter no minino 5 caracteres</span>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                            <input type="email" class="form-control required" id="exampleInputEmail1" name="email" aria-describedby="E-mail" required placeholder="Digite seu e-mail">
-                            <span class="span-required">Digite um email válido</span>
+                            <input type="email" class="form-control required" id="exampleInputEmail1" name="email" aria-describedby="E-mail" oninput="validacaoEmail()" required placeholder="Digite seu e-mail">
+                            <span class="span-required">Digite um e-mail válido</span>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputTel" class="form-label">Celular</label>
-                            <input type="tel" class="form-control required" id="exampleInputTel" name="telefone" required placeholder="(xx) xxxx-xxxx">
+                            <input type="tel" class="form-control required" id="exampleInputTel" name="telefone" oninput="validacaoTel()" required placeholder="(xx) xxxx-xxxx">
                             <span class="span-required">Digite um número válido</span>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Senha</label>
-                            <input type="password" class="form-control required" id="exampleInputPassword1" name="senha" required placeholder="Digite sua senha">
+                            <input type="password" class="form-control required" id="exampleInputPassword1" oninput="validacaoSenha()" name="senha" required placeholder="Digite sua senha">
                             <span class="span-required">Senha deve ter no mínimo 8 caracteres</span>
                         </div>
+
                         <div class="mb-3">
                             <label for="exampleInputPassword2" class="form-label required">Confirme sua senha</label>
                             <input type="password" class="form-control" id="exampleInputPassword2" name="conf-senha" required placeholder="Digite sua senha novamente">
