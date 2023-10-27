@@ -2,6 +2,7 @@ const form = document.getElementById('form')
 const campos = document.querySelectorAll('.required')
 const spans = document.querySelectorAll('.span-required')
 const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi
+const telRegex = /(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})/g
 
 
 function setError(index){
@@ -44,6 +45,13 @@ function validacaoEmail(){
 
 function validacaoTel(){
     $('.phone_with_ddd').mask('(00) 00000-0000')
+    if (telRegex.test(campos[3].value)){
+        removeErro(3)
+    }
+    else {
+        setError(3)
+        
+    }
 }
 
 function validacaoSenha() {
