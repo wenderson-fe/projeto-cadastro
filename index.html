@@ -42,7 +42,7 @@
 
                         <div class="mb-3">
                             <label for="exampleInputTel" class="form-label">Celular</label>
-                            <input type="tel" class="form-control required" id="exampleInputTel" name="telefone" oninput="validacaoTel()" required placeholder="(xx) xxxx-xxxx">
+                            <input type="tel" class="form-control required phone_with_ddd" id="exampleInputTel" name="telefone" oninput="validacaoTel()" required placeholder="(xx) xxxx-xxxx">
                             <span class="span-required">Digite um número válido</span>
                         </div>
 
@@ -53,8 +53,8 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword2" class="form-label required">Confirme sua senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" name="conf-senha" required placeholder="Digite sua senha novamente">
+                            <label for="exampleInputPassword2" class="form-label">Confirme sua senha</label>
+                            <input type="password" class="form-control required" id="exampleInputPassword2" name="conf-senha" oninput="compareSenha()" required placeholder="Digite sua senha novamente">
                             <span class="span-required">Senhas devem ser compatíveis</span>
                         </div>
                     </div>
@@ -98,6 +98,8 @@
 
     <script src="script.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 </body>
 

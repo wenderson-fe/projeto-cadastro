@@ -2,7 +2,7 @@ const form = document.getElementById('form')
 const campos = document.querySelectorAll('.required')
 const spans = document.querySelectorAll('.span-required')
 const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi
-const telRegex = /^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/
+
 
 function setError(index){
     campos[index].style.border = '2px solid #e63636'
@@ -42,22 +42,27 @@ function validacaoEmail(){
     }
 }
 
-// Ainda não está fucionando
 function validacaoTel(){
-    if (!telRegex.test(campos[3].value)){
-        console.log('ERRO')
-    }
-    else {
-        console.log('validado')
-    }
+    $('.phone_with_ddd').mask('(00) 00000-0000')
 }
 
 function validacaoSenha() {
     if (campos[4].value.length < 8) {
         setError(4)
     }
-    else{
+    else {
         removeErro(4)
+    }
+}
+ 
+
+function compareSenha() {
+    if (campos[4].value == campos[5].value && campos[5].value.length >= 8){
+        removeErro(5)
+    }
+    else {
+        setError(5)
+        
     }
 }
 
